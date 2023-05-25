@@ -1,0 +1,18 @@
+# .travis.yml for Elixir, https://github.com/bootlin/elixir
+language: python
+
+os:
+  - linux
+
+dist:
+  - jammy
+
+python:
+  - "3.10"
+
+before_install:
+  - sudo apt-get -y install libdb-dev python3-pytest libjansson4 universal-ctags
+  - pip install jinja2 pygments bsddb3 falcon
+
+script:
+  - prove -v

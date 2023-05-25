@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{{title}}</title>
+        <meta name="description" content="Elixir Cross Referencer - Explore source code in your browser - Particularly useful for the Linux kernel and other low-level projects in C/C++ (bootloaders, C libraries...)">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link rel="stylesheet" href="/style.css?v=3">
+        <link rel="stylesheet" href="/banner.css">
+        <link rel="stylesheet" href="/autocomplete.css">
+        <base href="{{baseurl}}"/>
+        <script>document.documentElement.className = 'js'</script>
+	<script>
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      var currentPath = window.location.pathname;
+      var parentPath = currentPath + "/..";
+      window.location.href = parentPath;
+    }
+  });
+</script>
+<script>
+  //var lxrcodeTable = document.getElementById('space');
+//    var class0 = document.querySelector("div.lxrcode");
+//    var scrollAmount = 100; // 调整滚动速度，根据需要进行更改
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 74) {
+      window.scrollBy(0, 200); // 向下滚动
+    } else if (event.keyCode === 75) {
+      window.scrollBy(0, -200); // 向上滚动
+    } //else if (event.keyCode === 72) {
+   //   window.scrollBy(-200, 0);
+//	    class0.scrollLeft -= scrollAmount;
+//    } else if (event.keyCode === 73) {
+//	    class0.scrollLeft += scrollAmount;
+ //   }
+  });
+</script>
+    </head>
+    <body>
+        <div class="wrapper">
+            {% include 'header.html' %}
+            <header class="topbar">
+                <div class="topbar">
+		    <p>fish4terrisa-MSDSM`s Source Code Library</p>
+                </div>
+            </header>
+            <main id="main0">
+                <div class="workspace" id="space">
+                    {{main}}
+                </div>
+            </main>
+            <footer class="footer">
+		    <span class="version"><a href="{{version}}/source">{{project}}</a> <a href="https://edulib-dictionary.casio.com.cn/shellinabox/">shell</a> <a href="https://edulib-dictionary.casio.com.cn/linuxtoy/">linuxtoy</a> <a href="https://edulib-dictionary.casio.com.cn/docbook/">docbook</a> <a href="https://edulib-dictionary.casio.com.cn/emacs/">emacs</a> <a href="https://edulib-dictionary.casio.com.cn/linux-c/">linux-c</a></span>
+            </footer>
+        </div>
+        <script src="/script.js?v=3"></script>
+        <script src="/autocomplete.js"  project="{{project}}"></script>
+	<script>
+    class4 = document.querySelector("div.lxrcode");
+    var scrollAmount = 100; // 调整滚动速度，根据需要进行更改
+  document.addEventListener("keydown", function(event) {
+    if (event.keyCode === 65) {
+   //   window.scrollBy(-200, 0);
+            class4.scrollLeft -= scrollAmount;
+    } else if (event.keyCode === 68) {
+            class4.scrollLeft += scrollAmount;
+    }
+  });
+</script>
+    </body>
+</html>
